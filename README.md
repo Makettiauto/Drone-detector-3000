@@ -1,11 +1,14 @@
-# Drone-detector-3000
-
-A drone detector build using the AD8317 demodulating logaritmic amplifier and the ESP32 microcontroller.
+# Drone-Detector-3000
+A drone detector project built using the AD8317 demodulating logarithmic amplifier and the ESP32 microcontroller.
 
 # Context
+Due to the rapid evolution of modern warfare, personal drone detection has become essential. The primary objective of this device is to provide the soldier with enough warning time to seek shelter or mount a defense. The detector does not need to fully demodulate the signal; instead, it detects RF emitters that exhibit characteristics resembling a drone signal and alerts the user immediately.
 
-Every modern soilder should have a drone detector due to the rapid change in warfare. The only task of this kind of detecor is to give the soilder time to seek shelter or mount a defence against the danger. The detector does not need to demodulate the signal. Instead it only needs to detect a emitter that somewhat resembles a drone signal and infrom the soilder about it.
+# My Solution
+This solution utilizes the AD8317 demodulating logarithmic amplifier and an ESP32 microcontroller, alongside an OLED display, a buzzer, and status LEDs.
 
-# My solution
+The device performs two main functions:
 
-My solution uses the the AD8317 demodulating logaritmic amplifier and the ESP32 microcontroller along side a OLED display, buzzer and leds. The detector informs the user of the summed strength of the signals in the 1MHz - 10GHz frequency range in the unit dBm. It also warns the user if speficily a drone signal is detected by calculating the signal strength average, standard deviation of the signal peaks and the peak to average ratio.
+Signal Monitoring: It displays the aggregate signal strength (in dBm) within the 1 MHz – 10 GHz frequency range.
+
+Drone Identification: It specifically warns the user if a drone signature is detected. This is achieved by analyzing the average signal strength, the standard deviation of signal peaks, and the Peak-to-Average Ratio (PAPR).
