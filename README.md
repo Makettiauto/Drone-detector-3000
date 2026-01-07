@@ -11,4 +11,4 @@ The device performs two main functions:
 
 Signal Monitoring: It displays the aggregate signal strength (in dBm) within the 1 MHz – 10 GHz frequency range.
 
-Drone Identification: It specifically warns the user if a drone signature is detected. This is achieved by analyzing the average signal strength, the standard deviation of signal peaks, and the Peak-to-Average Ratio (PAPR).
+Drone Identification: It specifically warns the user if a drone signature is detected. This is achieved by analyzing the average signal strength, the standard deviation of signal peaks, and the Peak-to-Average Ratio (PAR).
